@@ -1,0 +1,28 @@
+{
+  "name": "react-input",
+  "version": "0.1.0",
+  "description": "Collection de composant react. Composant de formulaire reprenant la structure bootstrap.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fzed51/react-input.git"
+  },
+  "keywords": [
+    "input",
+    "form",
+    "reactjs"
+  ],
+  "author": "Fabien Sanchez <fzed51+git@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fzed51/react-input/issues"
+  },
+  "homepage": "https://github.com/fzed51/react-input#readme",
+  "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}
