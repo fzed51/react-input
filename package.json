@@ -13,7 +13,9 @@
   "keywords": [
     "input",
     "form",
-    "reactjs"
+    "reactjs",
+    "react",
+    "typescript"
   ],
   "author": "Fabien Sanchez <fzed51+git@gmail.com>",
   "license": "MIT",
@@ -24,5 +26,9 @@
   "dependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.17"
   }
 }
