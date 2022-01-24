@@ -11,7 +11,7 @@ export const Button: FC<ButtonProps> = ({ onClick, children }) => {
       onClick(e);
     }
   };
-  return <Button onClick={hc}>{children}</Button>;
+  return <button onClick={hc}>{children}</button>;
 };
 
 export default Button;
