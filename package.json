@@ -5,9 +5,12 @@
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "scripts": {
+    "_prebuild": "git clean -qxdf ./ui-kit-dist",
+    "_build": "rollup -c",
+    "build": "yarn _prebuild && yarn _build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build:storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
