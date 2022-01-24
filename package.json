@@ -9,7 +9,7 @@
     "_build": "rollup -c",
     "build": "yarn _prebuild && yarn _build",
     "_gitpush": "git push && git push --tags",
-    "_publish": "npm publish --public",
+    "_publish": "npm publish --access public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
