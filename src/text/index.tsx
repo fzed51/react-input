@@ -24,7 +24,11 @@ export const InputText: FC<InputTextProps> = ({
   className = "input-group input-text" + (className ? " " + className : "");
   return (
     <div className={className}>
-      {label && <label className="input-text_label" htmlFor={id}></label>}
+      {label && (
+        <label className="input-text_label" htmlFor={id}>
+          {label}
+        </label>
+      )}
       <input
         id={id}
         className="input-text_input"
