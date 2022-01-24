@@ -1,6 +1,6 @@
 {
-  "name": "react-input",
-  "version": "0.1.0",
+  "name": "@fzed51/react-input",
+  "version": "0.2.0",
   "description": "Collection de composant react.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -8,9 +8,14 @@
     "_prebuild": "git clean -qxdf ./ui-kit-dist",
     "_build": "rollup -c",
     "build": "yarn _prebuild && yarn _build",
+    "_gitpush": "git push && git push --tags",
+    "_publish": "npm publish --public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "publish:maj": "yarn version --major && yarn _publish && yarn _gitpush",
+    "publish:min": "yarn version --minor && yarn _publish && yarn _gitpush",
+    "publish:pat": "yarn version --patch && yarn _publish && yarn _gitpush"
   },
   "repository": {
     "type": "git",
