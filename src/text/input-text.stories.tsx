@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { ChangeEvent, useEffect, useState } from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import { InputText } from ".";
@@ -10,12 +10,13 @@ export default {
 
 const Template: ComponentStory<typeof InputText> = (args) => {
   const { value, onChange, ...other } = args;
-  const [v, setV] = useState(value || "");
+  const [v, setV] = useState<string>(value || "");
   useEffect(() => {
-    setV(value);
+    setV(value || "");
   }, [value]);
-  const hc = (v, e) => {
-    setV(v), onChange(v, e);
+  const hc = (v: string, e: ChangeEvent<HTMLInputElement>) => {
+    setV(v);
+    onChange && onChange(v, e);
   };
   return <InputText {...other} value={v} onChange={hc} />;
 };
